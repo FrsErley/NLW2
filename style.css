@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(./Fundo.jpg) no-repeat top center;
+    background-color: #121214;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#topo {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%),
+    linear-gradient(0deg, #262629, #262629);
+}
+
+.fotoperfil{
+    margin-top: 4.8px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+#topo:hover {
+
+    transform: scale(1.2);
+    transition: transform .3s;
+
+}
+
+ul li:hover {
+    transform: scale(1.2);
+    transition: transform .3s;
+}
+
+    main {
+    max-width: 520px;
+    
+    margin: auto;
+    display: grid;
+    margin-top: 32px;
+    gap: 24px;
+    margin-bottom: 63px;
+}
+
+section{
+    background: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%),
+    linear-gradient(0deg, #262629, #262629);
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+
+#movies, #series, #redes {
+    border-radius: 8px;
+    background: #262629;
+    padding: 24px 32px 32px 32px;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+ul li {
+    margin-top: 24px;
+    
+}
+
+
+
+h1 {
+    font-size: 24px;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+}
+
+p {
+    padding-top: 12px;
+    color: #C1C1C1;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 160%;
+
+}
+
+ul li img {
+    border-radius: 8px;
+    width: 100px;
+    border: 1px solid #555555
+}
+
+#topo {
+    animation: fromtop .5s .2s backwards;
+}
+
+@keyframes fromtop{
+
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform:translateY(0);
+    }
+
+}
+
+
+
+main section {
+    animation: frombottom .7s backwards ;
+}
+
+main section:nth-child(1) {
+    animation-delay: .1s;
+}
+
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .8s;
+}
+
+
+
+@keyframes frombottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);}
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
